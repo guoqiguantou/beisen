@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.todo {
+  width: 500px;
+  margin: 50px auto;
+  border: 1px solid #ddd;
+  padding: 30px;
+}
+
+
+.addTodo {
+  display: flex;
+}
+
+.addTodo input {
+  flex: 1;
+  padding: 0 5px;
+}
+
+.addTodo button {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.todoTab {
+  display: flex;
+  line-height: 50px;
+  background-color: #f6f6f6;
+  margin: 10px 0;
+}
+
+.todoTab li {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.highlight {
+  color: #1890ff;
+}
+
+.todoList {
+  padding: 10px;
+}
+
+.number {
+
+  min-width: 10px;
+  height: 20px;
+  padding: 0 5px;
+  line-height: 20px;
+  background-color: #ff4d4f;
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  border-radius: 20px;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+}
+
+.todoList li {
+  display: flex;
+}
+
+.todoList li p {
+  flex: 1
+}
+
+.todoList li button {
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+
+
+/*进入（入场）前的CSS样式*/
+.boss-text-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+/*进入动画直到完成时之前的CSS样式*/
+.boss-text-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 200ms, transform 200ms;
+}
+
+/*进入完成时的CSS样式;*/
+.boss-text-enter-done {
+  opacity: 1;
+}
+
+/*退出（出场）前的CSS样式;*/
+.boss-text-exit {
+  opacity: 1;
+}
+
+/*退出动画知道完成时之前的的CSS样式。*/
+.boss-text-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 200ms, transform 200ms;
+
+}
+
+/*退出完成时的CSS样式*/
+.boss-text-exit-done {
+  opacity: 0;
+}

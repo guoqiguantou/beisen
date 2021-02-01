@@ -1,0 +1,72 @@
+.todo {
+    width: 500px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    padding: 30px;
+}
+
+.addTodo {
+    display: flex;
+
+    input {
+        flex: 1;
+        padding: 0 5px;
+    }
+
+    button {
+        margin-left: 20px;
+        padding: 10px;
+    }
+}
+
+.todoTab {
+    display: flex;
+    line-height: 50px;
+    background-color: #f6f6f6;
+    margin: 10px 0;
+
+    li {
+        flex: 1;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+
+    }
+
+    .highlight {
+        color: #1890ff;
+    }
+
+    .number {
+        min-width: 10px;
+        height: 20px;
+        padding: 0 5px;
+        line-height: 20px;
+        background-color: #ff4d4f;
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        top: 8px;
+        border-radius: 20px;
+        text-align: center;
+        display: block;
+        font-size: 12px;
+    }
+}
+
+.todoList {
+    padding: 10px;
+
+    li {
+        display: flex;
+
+        p {
+            flex: 1
+        }
+
+        button {
+            padding: 5px 10px;
+            margin: 5px;
+        }
+    }
+}
